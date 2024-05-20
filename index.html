@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Produktové kartičky</title>
+</head>
+<body>
+   <div class="container">
+      <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <img src="./images/800px_p-p2_blue_1024x1024.png">
+        <div class="content">
+          <h2>Discmania P2</h2>
+          <p>P2 je jeden z nejoblíbenějších putterů ve hře a vlajkovou lodí firmy Discmania. Jedná se o rovně létající putter se spíše hlubokým profilem. Je skvělý na dohazování do koše, ale i dlouhé hody.</p>
+          <a href="#">Do košíku</a>
+        </div>
+      </div>
+      
+      <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <img src="./images/33207502-D17E-4B46-9C2A-A3063F484A36_600x.webp">
+        <div class="content">
+          <h2>Lattitude 64° HOPE</h2>
+          <p>Naděje na zlepšení vašeho puttování je tady! HOPE je druhý putter z řady Royal od Latitude 64°. Jedná se o středně hluboký disk se zaobleným okrajem a bez beadu. </p>
+          <a href="#">Do košíku</a>
+        </div>
+      </div>
+      
+      <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <img src="./images/innova-pig-1022.webp">
+        <div class="content">
+          <h2>INNOVA Pig</h2>
+          <p>Pig je skvělý disk pro hyzer putty. Je super stabilní i v silném větru. Je výborný i na delší hyzer příhozy backhandem i forehandem. Je to skvělý driving-putter i z delších vzdáleností.</p>
+          <a href="#">Do košíku</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="vanilla-tilt.js"></script>
+
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+      });
+    </script>
+
+</body>
+</html>
